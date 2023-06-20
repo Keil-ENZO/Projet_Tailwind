@@ -33,3 +33,58 @@
 .after {
     @apply lg:after:content-[''] lg:after:flex lg:after:bg-[url('../img/line-bottom.png')] lg:after:absolute  lg:after:top-4 lg:after:left-32 2xl:lg:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52
 }
+
+.users{
+    @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer 
+}
+
+.user-text {
+    display: none;
+}
+
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s line forwards;
+}
+
+.user-pic {
+    transition: all 0.2s ease;
+}
+
+.user-pic.active-pic {
+    @apply border-2 border-solid border-color-secondary
+}
+
+
+@keyframes moveup {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+    
+}
+
+.priceCard {
+    perspective: 1000px;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.front { 
+    overflow: hidden;
+}
+
+.crad_btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200
+}
