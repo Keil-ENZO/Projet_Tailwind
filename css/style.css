@@ -25,3 +25,11 @@
 .blob2{ 
     @apply w-80 h-80 bg-color-secondary rounded-full absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden
 }
+
+.card {
+    @apply flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6
+}
+
+.after {
+    @apply lg:after:content-[''] lg:after:flex lg:after:bg-[url('../img/line-bottom.png')] lg:after:absolute  lg:after:top-4 lg:after:left-32 2xl:lg:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52
+}
