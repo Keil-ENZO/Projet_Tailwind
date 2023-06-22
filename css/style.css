@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 .btn {
-    @apply bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200
+    @apply bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200;
 }
 
 .hover {
-    @apply hover:text-color-secondary ease-in duration-200
+    @apply hover:text-color-secondary ease-in duration-200;
 }
 
 .title {
-    @apply text-3xl md:text-4xl font-bold leading-snug 
+    @apply text-3xl md:text-4xl font-bold leading-snug ;
 }
 
 .cards {
@@ -19,15 +19,15 @@
 }
 
 .blob1 {
-    @apply w-80 h-80 bg-color-blob rounded-full absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden
+    @apply w-80 h-80 bg-color-blob rounded-full absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden;
 }
 
 .blob2{ 
-    @apply w-80 h-80 bg-color-secondary rounded-full absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden
+    @apply w-80 h-80 bg-color-secondary rounded-full absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden;
 }
 
 .card {
-    @apply flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6
+    @apply flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6;
 }
 
 .after {
@@ -35,7 +35,7 @@
 }
 
 .users{
-    @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer 
+    @apply h-20 w-20 rounded-full p-1 m-3 cursor-pointer ;
 }
 
 .user-text {
@@ -86,5 +86,9 @@
 }
 
 .crad_btn {
-    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
+}
+
+.input {
+    @apply bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary;
 }
